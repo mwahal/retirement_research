@@ -9,6 +9,8 @@ choosing the best-ranked funds each January -- from every start year since 1995,
 `index.html` is the book: one self-contained page with every table and chart; it works offline (only the fonts
 are fetched from the web).
 
+**Read it online:** https://mwahal.github.io/retirement_research/
+
 ## License
 
 Copyright (c) 2026 Mudit Wahal, ScribbledLines, Inc. Licensed under the Creative Commons
