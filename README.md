@@ -11,6 +11,9 @@ rule that moves the stock / bond split, and ends with a chapter on saving instea
 
 **Read it online:** https://mwahal.github.io/retirement_research/
 
+**History, not a forecast.** The book shows how these portfolios behaved in the retirements that actually happened,
+over ten to fifty years. It does not say which funds or which mix will do best in future, and recommends none of them.
+
 `index.html` is the book: one self-contained page with every table and chart; it works offline (only the fonts
 are fetched from the web).
 
