@@ -1,0 +1,260 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Retiree's Portfolio: slides</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Public+Sans:wght@400;600;700&display=swap">
+<style>
+html,body{margin:0;height:100%;background:#0D1526;overflow:hidden;font-family:'Public Sans',Arial,sans-serif}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+h1,h2,h3,p,ul,ol,table{margin:0}
+ul{padding-left:1.1em} li{margin:0 0 0.35em 0}
+table{border-collapse:collapse;width:100%}
+th,td{padding:0.35em 0.6em;border-bottom:1px solid rgba(120,120,120,0.35)}
+th{font-weight:700;vertical-align:bottom}
+section{position:relative;width:1920px;height:1080px;box-sizing:border-box;overflow:hidden}
+#stage section{display:none!important;position:absolute;left:0;top:0}
+#stage section.on{display:flex!important}
+#bar{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:8px 16px;
+  color:#9AA6BA;font-size:14px;background:rgba(13,21,38,0.85)}
+#bar a{color:#E8A06A;text-decoration:none} #bar button{background:none;border:1px solid #3A4A6A;color:#C9D2E0;border-radius:6px;
+  padding:4px 12px;margin:0 4px;cursor:pointer;font:inherit}
+</style></head><body>
+<div id="stage">
+<section id="cover" data-transition="fade" style="background:#14213D;color:#F6F3EC;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-size:28px;letter-spacing:4px;text-transform:uppercase;color:#E8A06A;font-weight:600">A book of retirement history</p>
+<h1 style="font-family:'Libre Baskerville', Georgia, serif;font-size:120px;font-weight:700;line-height:1.1;color:#F6F3EC">The Retiree’s Portfolio</h1>
+<p style="font-size:40px;line-height:1.4;color:#C9D2E0;width:1500px">Choosing funds or holding the index: thirty years of Vanguard funds, and a century and a half of market history</p>
+<p style="font-size:36px;font-weight:600;color:#E8A06A">https://mwahal.github.io/retirement_research/</p>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#9AA6BA">History, not a forecast · not investment advice</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:600px;font-size:24px;color:#9AA6BA;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="question" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">The question</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">Choose the best funds every year, or hold two index funds and never choose?</h2>
+<div style="display:flex;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;padding:40px;border:2px solid #E2DCCF;border-radius:16px">
+<p style="font-size:72px;font-weight:700;color:#14213D">$1,000,000</p>
+<p style="font-size:30px;line-height:1.4">invested on the first trading day of retirement</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;padding:40px;border:2px solid #E2DCCF;border-radius:16px">
+<p style="font-size:72px;font-weight:700;color:#14213D">$40,000</p>
+<p style="font-size:30px;line-height:1.4">withdrawn at the end of year one, then 3% more each year</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;padding:40px;border:2px solid #E2DCCF;border-radius:16px">
+<p style="font-size:72px;font-weight:700;color:#14213D">Every year</p>
+<p style="font-size:30px;line-height:1.4">from 1995 a retirement could have begun, with the funds Vanguard really offered</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1100px;font-size:24px;color:#6B7585">The Retiree’s Portfolio · chapters 1 and 13–17</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:500px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="measures" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">How every result is read</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">The floor first, the ending second</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div data-hl="m-worst" style="display:flex;flex-direction:column;gap:12px;background:#FBEEE3;padding:36px;border:2px solid #E8C2A2;border-radius:16px">
+<h3 style="font-size:40px;font-weight:700;color:#8A3D0B">1. Worst lowest value</h3>
+<p style="font-size:30px;line-height:1.4">The deepest any retiree’s money fell, with the month and how far into the retirement</p>
+</div>
+<div data-hl="m-median" style="display:flex;flex-direction:column;gap:12px;background:#FBEEE3;padding:36px;border:2px solid #E8C2A2;border-radius:16px">
+<h3 style="font-size:40px;font-weight:700;color:#8A3D0B">2. Median lowest value</h3>
+<p style="font-size:30px;line-height:1.4">The low point of the typical retirement</p>
+</div>
+<div data-hl="m-wend" style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:40px;font-weight:700;color:#14213D">3. Worst ending</h3>
+<p style="font-size:30px;line-height:1.4">What the unluckiest retiree had left</p>
+</div>
+<div data-hl="m-mend" style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:40px;font-weight:700;color:#14213D">4. Median ending</h3>
+<p style="font-size:30px;line-height:1.4">What the typical retiree had left</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1100px;font-size:24px;color:#6B7585">The low point is where a retiree might give up on the plan · chapter 16</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:500px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="history" data-transition="fade" style="background:#B4530F;color:#FFF7EE;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:96px;font-weight:700;line-height:1.1;color:#FFF7EE">History, not a forecast</h2>
+<p style="font-size:40px;line-height:1.45;width:1500px;color:#FFF7EE">Every result is a retirement that actually happened. None of it says which funds or which mix will do best next, and none of it is a recommendation.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1100px;font-size:24px;color:#FBDCC4">Said at the start of the book, and again at every part</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:500px;font-size:24px;color:#FBDCC4;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="table20" data-section="Thirty years of real funds, twenty-year retirements" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:112px 128px 160px;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">Twenty-year retirements, begun 1995–2006 · 70% stocks, 30% bonds</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:56px;font-weight:700;line-height:1.15;color:#14213D">Twelve real retirements, read floor first</h2>
+<table style="font-size:28px;color:#26324A;font-family:'Public Sans', Arial, sans-serif">
+<tr><th data-hl="h-name" style="width:34%;text-align:left">portfolio</th><th data-hl="h-low" style="width:20%;text-align:right;color:#8A3D0B">lowest value: worst (when)</th><th style="width:15%;text-align:right;color:#8A3D0B">lowest value: median</th><th style="width:15%;text-align:right">worst ending</th><th style="width:16%;text-align:right">median ending</th></tr>
+<tr><td data-hl="spy-name">SPY (all stocks)</td><td data-hl="spy-low" style="text-align:right">$290k (Mar 2009)</td><td style="text-align:right">$515k</td><td style="text-align:right">$385k</td><td data-hl="spy-end" style="text-align:right">$2.42M</td></tr>
+<tr style="background:#EAF0F7"><td data-hl="pi-name">Plain index: 70% 500 Index, 30% Total Bond Market</td><td data-hl="pi-low" style="text-align:right">$492k (Mar 2009)</td><td data-hl="pi-med" style="text-align:right">$674k</td><td style="text-align:right">$835k</td><td data-hl="pi-end" style="text-align:right">$2.10M</td></tr>
+<tr><td>Bonds alone (Total Bond Market)</td><td style="text-align:right">$545k (Dec 2024)</td><td style="text-align:right">$899k</td><td style="text-align:right">$545k</td><td style="text-align:right">$906k</td></tr>
+<tr><td data-hl="cash-name">Cash alone (Treasury bills)</td><td data-hl="cash-low" style="text-align:right">$120k (Dec 2022)</td><td style="text-align:right">$189k</td><td style="text-align:right">$120k</td><td style="text-align:right">$189k</td></tr>
+<tr><td>Menu each January, top two</td><td data-hl="menu-low" style="text-align:right">$515k (Mar 2009)</td><td data-hl="menu-med" style="text-align:right">$755k</td><td style="text-align:right">$692k</td><td data-hl="menu-end" style="text-align:right">$1.78M</td></tr>
+<tr><td>List frozen at retirement, top two</td><td style="text-align:right">$476k (Mar 2009)</td><td style="text-align:right">$721k</td><td style="text-align:right">$943k</td><td style="text-align:right">$2.07M</td></tr>
+<tr><td data-hl="once-name">Picked once and kept, top two</td><td data-hl="once-low" style="text-align:right">$352k (Mar 2009)</td><td style="text-align:right">$753k</td><td style="text-align:right">$408k</td><td data-hl="once-end" style="text-align:right">$2.83M</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">Start $1M; $40,000 a year rising 3%; nominal dollars, before taxes · The answer in brief, chapters 18–20</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="methods" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">Choosing funds</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">At 70/30, no way of choosing funds beat the plain index on both the floor and the median ending</h2>
+<div style="display:flex;gap:32px">
+<div data-hl="k-menu" style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#14213D">Menu each January</h3>
+<p style="font-size:30px;line-height:1.4">Floor <b>$515k</b> against <b>$492k</b>, higher</p>
+<p style="font-size:30px;line-height:1.4">Median ending <b>$1.78M</b> against <b>$2.10M</b>, lower</p>
+</div>
+<div data-hl="k-frozen" style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#14213D">List frozen at retirement</h3>
+<p style="font-size:30px;line-height:1.4">Floor <b>$476k</b>, lower</p>
+<p style="font-size:30px;line-height:1.4">Median ending <b>$2.07M</b>, lower</p>
+</div>
+<div data-hl="k-once" style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#14213D">Picked once and kept</h3>
+<p style="font-size:30px;line-height:1.4">Floor <b>$352k</b>, the deepest</p>
+<p style="font-size:30px;line-height:1.4">Median ending <b>$2.83M</b>, the highest: a few fortunate picks</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">Floor = worst lowest value; against the plain index at 70/30 · chapters 18–20 and 26</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="splits" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">The split</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">More in bonds raised every floor and lowered every median</h2>
+<table data-hl="sp-table" style="font-size:32px;color:#26324A;font-family:'Public Sans', Arial, sans-serif">
+<tr><th style="width:40%;text-align:left">the plain index, 20 years, 1995–2006</th><th style="width:20%;text-align:right">70/30</th><th style="width:20%;text-align:right">60/40</th><th style="width:20%;text-align:right">50/50</th></tr>
+<tr style="background:#FBEEE3"><td>Lowest value: worst</td><td data-hl="s70-low" style="text-align:right">$492k</td><td style="text-align:right">$573k</td><td data-hl="s50-low" style="text-align:right">$662k</td></tr>
+<tr><td>Lowest value: median</td><td style="text-align:right">$674k</td><td style="text-align:right">$721k</td><td style="text-align:right">$771k</td></tr>
+<tr><td>Worst ending</td><td style="text-align:right">$835k</td><td style="text-align:right">$932k</td><td style="text-align:right">$991k</td></tr>
+<tr><td>Median ending</td><td data-hl="s70-end" style="text-align:right">$2.10M</td><td style="text-align:right">$1.91M</td><td data-hl="s50-end" style="text-align:right">$1.63M</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">The same holds for every method · the answer in brief, chapter 9</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="century" data-section="A century and a half of history, and two ways to raise the floor" data-transition="fade" style="background:#14213D;color:#C9D2E0;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#E8A06A;font-weight:600">A century of retirements · yearly market history, 1928–2025</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:60px;font-weight:700;line-height:1.15;color:#F6F3EC">The hardest retirements began long before the study’s fund prices</h2>
+<table data-hl="c-table" style="font-size:30px;color:#E6EBF3;font-family:'Public Sans', Arial, sans-serif">
+<tr><th style="width:40%;text-align:left">79 twenty-year retirements, begun 1928–2006</th><th style="width:36%;text-align:right;color:#E8A06A">lowest value: worst (start year)</th><th style="width:24%;text-align:right">ran out</th></tr>
+<tr><td>Stocks alone (S&amp;P 500)</td><td style="text-align:right">$0 (1929, ran out 1942)</td><td style="text-align:right">2 of 79</td></tr>
+<tr style="background:#24345A"><td>70% stocks, 30% bonds</td><td data-hl="c70" style="text-align:right">$0 (1929, ran out 1948)</td><td style="text-align:right">1 of 79</td></tr>
+<tr><td>60% stocks, 40% bonds</td><td style="text-align:right">$105k (1929)</td><td style="text-align:right">0 of 79</td></tr>
+<tr><td>50% stocks, 50% bonds</td><td style="text-align:right">$228k (1929)</td><td style="text-align:right">0 of 79</td></tr>
+</table>
+<p style="font-size:32px;line-height:1.4;color:#F6F3EC">With withdrawals rising with inflation, the hardest thirty-year retirements began in <b>1965 and 1966</b>.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#9AA6BA">The S&amp;P 500 and a 10-year Treasury, restored each January · chapters 10–11</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#9AA6BA;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="hardstop" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">Moving the split · a hard stop to 20/80 after a 20% fall</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">It raised the floor on the study’s years, not over the long history</h2>
+<div style="display:flex;gap:40px">
+<div data-hl="h-study" style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FFFDF8;padding:40px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#14213D">The study’s index funds, 1995–2006</h3>
+<p style="font-size:30px;line-height:1.4">Worst lowest value <b>$755k</b> against the plain index’s <b>$492k</b></p>
+<p style="font-size:30px;line-height:1.4">Median ending <b>$1.81M</b> against <b>$2.10M</b></p>
+</div>
+<div data-hl="h-long" style="flex:1;display:flex;flex-direction:column;gap:16px;background:#FBEEE3;padding:40px;border:2px solid #E8C2A2;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#8A3D0B">Monthly history from 1872</h3>
+<p style="font-size:30px;line-height:1.4">With withdrawals rising with inflation, its worst lowest value was <b>$232k</b> (the 1903 retirement)</p>
+<p style="font-size:30px;line-height:1.4">Below every fixed mix; 50/50’s was <b>$490k</b></p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">Twenty-year retirements; settings declared in advance, never tuned · chapter 12</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="bucket" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">The bucket-of-money strategy · two years of withdrawals in Treasury bills</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">A small rise in the floor, at a large cost in the ending</h2>
+<table style="font-size:32px;color:#26324A;font-family:'Public Sans', Arial, sans-serif">
+<tr><th style="width:46%;text-align:left">20 years, 70/30, 1995–2006</th><th style="width:27%;text-align:right">the study’s rule</th><th style="width:27%;text-align:right">two-year bucket</th></tr>
+<tr style="background:#EAF0F7"><td>Plain index: lowest value, worst</td><td style="text-align:right">$492k</td><td data-hl="b-low" style="text-align:right">$519k</td></tr>
+<tr style="background:#EAF0F7"><td>Plain index: median ending</td><td style="text-align:right">$2.10M</td><td data-hl="b-end" style="text-align:right">$1.78M</td></tr>
+<tr><td>Menu each January: lowest value, worst</td><td style="text-align:right">$515k</td><td data-hl="b-menu" style="text-align:right">$342k</td></tr>
+<tr><td>Menu each January: median ending</td><td style="text-align:right">$1.78M</td><td style="text-align:right">$1.24M</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">The retiree’s income is the same in every version · chapter 25</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="saver" data-section="Saving before retirement, and what the record shows" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">Before retirement · $10,000 saved at the end of year one, 3% more each year</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">Saving into stocks: a deep floor early, the most over time</h2>
+<div style="display:flex;gap:32px">
+<div data-hl="sv-floor-card" style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FBEEE3;padding:36px;border:2px solid #E8C2A2;border-radius:16px">
+<p data-hl="sv-floor" style="font-size:80px;font-weight:700;color:#8A3D0B">45.8%</p>
+<p style="font-size:30px;line-height:1.4">of the money put in: the worst a stocks-alone saver held, December 1931</p>
+</div>
+<div data-hl="sv-ret-card" style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<p data-hl="sv-ret" style="font-size:80px;font-weight:700;color:#14213D">11.4%</p>
+<p style="font-size:30px;line-height:1.4">median yearly return on the deposits over 20 years in stocks; bonds 4.0%, cash 3.5%</p>
+</div>
+<div data-hl="sv-1m-card" style="flex:1;display:flex;flex-direction:column;gap:14px;background:#FFFDF8;padding:36px;border:2px solid #E2DCCF;border-radius:16px">
+<p data-hl="sv-1m" style="font-size:80px;font-weight:700;color:#14213D">21 years</p>
+<p style="font-size:30px;line-height:1.4">for the median saver to reach $1M in stocks; about 32 in cash</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">Yearly history from 1928 · Part IX, chapters 28–36</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="shows" data-transition="fade" style="background:#F6F3EC;color:#3E4A5C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:44px">
+<p style="font-size:26px;letter-spacing:3px;text-transform:uppercase;color:#B4530F;font-weight:600">What the record shows</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:64px;font-weight:700;line-height:1.15;color:#14213D">The split decided the floor; choosing funds did not</h2>
+<div style="display:flex;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#FFFDF8;padding:40px;border:2px solid #E2DCCF;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#14213D">It shows</h3>
+<ul style="font-size:30px;line-height:1.45">
+<li>At 70/30, no way of choosing funds beat two index funds on both the floor and the median ending</li>
+<li>More in bonds: a higher floor, a lower median</li>
+<li>The hardest retirements began in 1929 and in 1965–66</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#FBEEE3;padding:40px;border:2px solid #E8C2A2;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;color:#8A3D0B">It does not show</h3>
+<ul style="font-size:30px;line-height:1.45">
+<li>The future: twelve overlapping retirements are one or two views of the market</li>
+<li>Anything after taxes and trading costs</li>
+<li>What any reader should do: none of it is advice</li>
+</ul>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1150px;font-size:24px;color:#6B7585">Chapters 26 and 27 set out the evidence and its limits</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:450px;font-size:24px;color:#6B7585;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+<section id="close" data-transition="fade" style="background:#14213D;color:#F6F3EC;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-size:28px;letter-spacing:4px;text-transform:uppercase;color:#E8A06A;font-weight:600">Read the whole book, free</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:96px;font-weight:700;line-height:1.1;color:#F6F3EC">The Retiree’s Portfolio</h2>
+<p style="font-size:40px;line-height:1.4;color:#C9D2E0;width:1500px">Thirty-six chapters, every table and chart, and every caveat</p>
+<p style="font-size:56px;font-weight:700;color:#E8A06A">https://mwahal.github.io/retirement_research/</p>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#9AA6BA">History, not a forecast · not investment advice</p>
+<p data-copy="1" style="position:absolute;right:128px;bottom:64px;width:600px;font-size:24px;color:#9AA6BA;text-align:right">© ScribbledLines, Inc.</p>
+
+</section>
+</div>
+<div id="bar"><span><a href="./">Read the book</a> · <a href="slides.pdf">PDF</a></span>
+<span><button id="prev" aria-label="Previous slide">&#8592;</button><span id="n"></span><button id="next" aria-label="Next slide">&#8594;</button></span>
+<span>© ScribbledLines, Inc.</span></div>
+<script>
+const S=[...document.querySelectorAll('#stage section')], st=document.getElementById('stage');
+let i=Math.max(0,Math.min(S.length-1,(parseInt(location.hash.slice(1))||1)-1));
+function fit(){const k=Math.min(innerWidth/1920,(innerHeight-40)/1080);st.style.transform='translate(-50%,calc(-50% - 20px)) scale('+k+')'}
+function show(j){i=Math.max(0,Math.min(S.length-1,j));S.forEach((s,k)=>s.classList.toggle('on',k===i));
+  document.getElementById('n').textContent=(i+1)+' / '+S.length;history.replaceState(null,'','#'+(i+1))}
+addEventListener('resize',fit);
+addEventListener('keydown',e=>{if(['ArrowRight','PageDown',' '].includes(e.key)){show(i+1);e.preventDefault()}
+  else if(['ArrowLeft','PageUp'].includes(e.key)){show(i-1);e.preventDefault()}else if(e.key==='Home')show(0);else if(e.key==='End')show(S.length-1)});
+st.addEventListener('click',e=>show(e.clientX>innerWidth/2?i+1:i-1));
+document.getElementById('prev').onclick=()=>show(i-1);document.getElementById('next').onclick=()=>show(i+1);
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)show(d<0?i+1:i-1);x0=null});
+fit();show(i);
+</script></body></html>

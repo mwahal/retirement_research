@@ -7,7 +7,7 @@ years or more: holding cash or bonds alone, holding the S&P 500, a plain two-fun
 best-ranked funds -- picked once and kept, re-ranked each January within the list of the first day of retirement,
 or from the whole menu each January -- from every start year since 1995, not one lucky one. It reads the lowest
 point first, then what was left. It also follows the same retirement over market history back to 1872, including a
-rule that moves the stock / bond split, and ends with a chapter on saving instead of spending. Prices through 2026-10-09.
+rule that moves the stock / bond split, and ends with a part on saving before retirement. Prices through 2026-10-09.
 
 **Read it online:** https://mwahal.github.io/retirement_research/
 
@@ -16,6 +16,14 @@ over ten to fifty years. It does not say which funds or which mix will do best i
 
 `index.html` is the book: one self-contained page with every table and chart; it works offline (only the fonts
 are fetched from the web).
+
+## A five-minute introduction
+
+For a first look before the thirty-six chapters:
+
+- **Video** (4 min 47 s, narrated): https://mwahal.github.io/retirement_research/retirees_portfolio_intro.mp4 (`retirees_portfolio_intro.mp4`)
+- **Slides**, to page through in the browser: https://mwahal.github.io/retirement_research/slides.html (`slides.html`)
+- **Slides as a PDF:** https://mwahal.github.io/retirement_research/slides.pdf (`slides.pdf`)
 
 ## License
 
